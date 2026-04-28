@@ -1,61 +1,93 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>M.A.B.</title>
+<title>M.A.B. | Música, Arte y Bienestar</title>
 
 <style>
-body {
-  margin:0;
-  font-family: Arial;
-  color:white;
-  text-align:center;
-  background:url("fondo.jpg") center/cover no-repeat fixed;
-}
-
-body::before {
-  content:"";
-  position:fixed;
-  width:100%; height:100%;
-  background:rgba(0,0,0,0.7);
-  top:0; left:0;
-  z-index:-1;
-}
-
-.logo img {
-  width:250px;
-  margin-top:80px;
-}
-
-p {
-  max-width:600px;
-  margin:20px auto;
-}
-
-.btn {
-  display:inline-block;
-  padding:12px 25px;
-  background:#00ffcc;
-  color:black;
-  text-decoration:none;
-  border-radius:5px;
-}
+body{margin:0;font-family:Arial;background:black;color:white;}
+.hero{height:100vh;background:url('fondo.jpg') center/cover no-repeat;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background-color:rgba(0,0,0,0.7);background-blend-mode:darken;}
+.hero img{width:180px;margin-bottom:20px;}
+.boton{padding:10px 20px;background:linear-gradient(45deg,#c9a34e,#f5c518);color:black;text-decoration:none;font-weight:bold;border-radius:5px;margin:10px;display:inline-block;}
+section{padding:50px 20px;text-align:center;}
+h2{color:#f5c518;}
+.servicios{display:flex;flex-wrap:wrap;justify-content:center;gap:30px;}
+.card{background:#111;padding:20px;border-radius:10px;width:280px;}
+.card img{width:100%;border-radius:10px;}
+.flyer{width:100%;margin-top:15px;border-radius:10px;border:2px solid #c9a34e;}
+.videos{display:flex;flex-wrap:wrap;justify-content:center;gap:20px;}
+.videos iframe{width:300px;height:170px;border-radius:10px;}
+.whatsapp{position:fixed;bottom:20px;right:20px;background:green;color:white;padding:15px;border-radius:50%;text-decoration:none;}
 </style>
 </head>
-
 <body>
 
-<div class="logo">
-  <img src="logo.png">
+<div class="hero">
+<img src="logo.png">
+<h1>M.A.B.</h1>
+<p style="color:#f5c518;"><b>Música, Arte y Bienestar</b></p>
+<p>Afinación de pianos | Clases | Producción musical</p>
+<a href="#servicios" class="boton">VER SERVICIOS</a>
+<a href="https://wa.me/543564376038" class="boton" target="_blank">WHATSAPP</a>
 </div>
 
-<p>
-M.A.B. Música, Arte y Bienestar ofrece formación musical, afinación de pianos
-y desarrollo artístico. Ingresá para conocer todos los servicios.
-</p>
+<section id="servicios">
+<h2>Servicios</h2>
+<div class="servicios">
 
-<a class="btn" href="musica.html">Ingresar</a>
+<div class="card">
+<img alt="Afinación de pianos">
+<h3>Afinación de pianos</h3>
+<img src="flyer-afinacion.jpg" class="flyer">
+</div>
+
+<div class="card">
+<img src="clases.jpg">
+<h3>Clases de guitarra</h3>
+<img src="flyer-guitarra.jpg" class="flyer">
+</div>
+
+<div class="card">
+<img src="produccion.jpg">
+<h3>Producción musical</h3>
+</div>
+
+</div>
+</section>
+
+<!-- MUSICA -->
+<section>
+<h2>Música</h2>
+<div class="videos">
+<iframe src="https://www.youtube.com/embed/ld_sY9uRRV4" allowfullscreen></iframe>
+</div>
+</section>
+
+<!-- PRODUCCION -->
+<section>
+<h2>Producción Musical</h2>
+<a href="https://www.youtube.com/watch?v=ld_sY9uRRV4" target="_blank" class="boton">
+VER VIDEO
+</a>
+</section>
+
+<!-- INSUMOS -->
+<section>
+<h2>Insumos de Guitarra</h2>
+<div class="servicios">
+<div class="card"><h3>Cuerdas</h3></div>
+<div class="card"><h3>Púas</h3></div>
+<div class="card"><h3>Mantenimiento</h3></div>
+</div>
+</section>
+
+<section>
+<h2>Contacto</h2>
+<p>📞 3564 376038</p>
+</section>
+
+<a class="whatsapp" href="https://wa.me/543564376038" target="_blank">📲</a>
 
 </body>
 </html>
