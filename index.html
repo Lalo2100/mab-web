@@ -3,86 +3,182 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>M.A.B. | Música, Arte y Bienestar</title>
+<title>Clases de Canto, Guitarra y Piano</title>
 
 <style>
-body{margin:0;font-family:Arial;background:black;color:white;}
-.hero{height:100vh;background:url('fondo.jpg') center/cover no-repeat;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background-color:rgba(0,0,0,0.7);background-blend-mode:darken;}
-.hero img{width:180px;margin-bottom:20px;}
-.boton{padding:10px 20px;background:linear-gradient(45deg,#c9a34e,#f5c518);color:black;text-decoration:none;font-weight:bold;border-radius:5px;margin:10px;display:inline-block;}
-section{padding:50px 20px;text-align:center;}
-h2{color:#f5c518;}
-.servicios{display:flex;flex-wrap:wrap;justify-content:center;gap:30px;}
-.card{background:#111;padding:20px;border-radius:10px;width:280px;}
-.card img{width:100%;border-radius:10px;}
-.flyer{width:100%;margin-top:15px;border-radius:10px;border:2px solid #c9a34e;}
-.videos{display:flex;flex-wrap:wrap;justify-content:center;gap:20px;}
-.videos iframe{width:300px;height:170px;border-radius:10px;}
-.whatsapp{position:fixed;bottom:20px;right:20px;background:green;color:white;padding:15px;border-radius:50%;text-decoration:none;}
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#0d0d0d;
+  color:white;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.container{
+  max-width:1000px;
+  margin:auto;
+  padding:20px;
+  text-align:center;
+}
+
+/* TITULO PRINCIPAL */
+.titulo{
+  font-size:60px;
+  font-weight:bold;
+  color:#ffc107;
+}
+
+.subtitulo{
+  font-size:22px;
+  margin-bottom:20px;
+}
+
+.destacado{
+  color:#ffc107;
+}
+
+/* BLOQUES */
+.bloques{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  margin-top:30px;
+}
+
+.bloque{
+  width:30%;
+  background:#1a1a1a;
+  padding:20px;
+  border-radius:10px;
+  margin-bottom:20px;
+}
+
+/* LISTAS */
+ul{
+  text-align:left;
+}
+
+/* PRECIO */
+.precio{
+  margin:30px 0;
+  font-size:30px;
+  background:#ffc107;
+  color:black;
+  padding:15px;
+  border-radius:10px;
+  font-weight:bold;
+}
+
+/* CONTACTO */
+.contacto{
+  margin-top:30px;
+  font-size:22px;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:15px;
+  padding:15px 25px;
+  background:#25d366;
+  color:white;
+  text-decoration:none;
+  border-radius:10px;
+  font-weight:bold;
+}
+
+/* FOOTER */
+.footer{
+  margin-top:40px;
+  font-size:18px;
+  color:#aaa;
+}
+
+/* RESPONSIVE */
+@media(max-width:800px){
+  .bloque{
+    width:100%;
+  }
+
+  .titulo{
+    font-size:40px;
+  }
+}
 </style>
+
 </head>
-<a class="whatsapp" href="https://wa.me/543564376038" target="_blank">📲</a>
 
-<!-- CONTADOR DE VISITAS -->
-<script src="https://cdn.counter.dev/script.js" data-id="TU-ID" data-utcoffset="-3"></script>
-
-</body>
-</html>
 <body>
 
-<div class="hero">
-<img src="logo.png">
-<h1>M.A.B.</h1>
-<p style="color:#f5c518;"><b>Música, Arte y Bienestar</b></p>
-<p>Afinación de pianos | Clases | Producción musical</p>
-<a href="#servicios" class="boton">VER SERVICIOS</a>
-<a href="https://wa.me/543564376038" class="boton" target="_blank">WHATSAPP</a>
+<div class="container">
+
+  <h1 class="titulo">CLASES DE</h1>
+  <h1 class="titulo">CANTO Y GUITARRA</h1>
+  <h2 class="subtitulo">PARA TODAS LAS EDADES</h2>
+  <h1 class="titulo destacado">+ PIANO</h1>
+
+  <div class="bloques">
+
+    <!-- CANTO -->
+    <div class="bloque">
+      <h2>🎤 CANTO</h2>
+      <ul>
+        <li>Técnica vocal</li>
+        <li>Respiración y afinación</li>
+        <li>Interpretación</li>
+        <li>Repertorio a elección</li>
+      </ul>
+    </div>
+
+    <!-- INFO -->
+    <div class="bloque">
+      <h2>⭐ CLASES</h2>
+      <p>Personalizadas</p>
+      <p>Días y horarios a coordinar</p>
+      <p>Individuales o grupales</p>
+    </div>
+
+    <!-- GUITARRA -->
+    <div class="bloque">
+      <h2>🎸 GUITARRA</h2>
+      <ul>
+        <li>Desde cero o avanzado</li>
+        <li>Clases dinámicas</li>
+        <li>Acompañamiento</li>
+        <li>Arpegios y repertorio</li>
+      </ul>
+    </div>
+
+    <!-- PIANO -->
+    <div class="bloque">
+      <h2>🎹 PIANO</h2>
+      <ul>
+        <li>Principiante a avanzado</li>
+        <li>Técnica y lectura</li>
+        <li>Clásico y moderno</li>
+        <li>Clases dinámicas</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="precio">
+    PRECIOS ACCESIBLES – ¡Consultá sin compromiso!
+  </div>
+
+  <div class="contacto">
+    📍 Barrio Independencia – Cabrera 3721 <br><br>
+    📲 3564 376038
+    <br>
+    <a class="btn" href="https://wa.me/543564376038" target="_blank">
+      ESCRIBIR POR WHATSAPP
+    </a>
+  </div>
+
+  <div class="footer">
+    Descubrí tu voz. Tocá tu pasión.
+  </div>
+
 </div>
-
-<section id="servicios">
-<h2>Servicios</h2>
-<div class="servicios">
-
-<div class="card">
-<img src="afinacion.jpg" alt="Afinación de pianos">
-<h3>Afinación de pianos</h3>
-<img src="flyer-afinacion.jpg" class="flyer">
-</div>
-
-<div class="card">
-<img src="clases.jpg" alt="Clases de guitarra">
-<h3>Clases de guitarra</h3>
-<img src="flyer-guitarra.jpg" class="flyer">
-</div>
-
-</div>
-</section>
-
-<!-- MUSICA -->
-<section>
-<h2>Música</h2>
-<div class="videos">
-<iframe src="https://www.youtube.com/embed/ld_sY9uRRV4" allowfullscreen></iframe>
-<iframe src="https://www.youtube.com/embed/yYAARuGDLk4" allowfullscreen></iframe>
-</div>
-</section>
-
-<!-- INSUMOS -->
-<section>
-<h2>Insumos de Guitarra</h2>
-<div class="servicios">
-<div class="card"><h3>Cuerdas</h3></div>
-<div class="card"><h3>Púas</h3></div>
-<div class="card"><h3>Mantenimiento</h3></div>
-</div>
-</section>
-
-<section>
-<h2>Contacto</h2>
-<p>📞 3564 376038</p>
-</section>
-
-<a class="whatsapp" href="https://wa.me/543564376038" target="_blank">📲</a>
 
 </body>
 </html>
